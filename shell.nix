@@ -8,5 +8,6 @@ stdenv.mkDerivation rec {
   buildInputs = with python3Packages; [
     python3
     requests2
+    scrypt
   ];
 }
