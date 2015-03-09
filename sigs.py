@@ -2,7 +2,9 @@
 ###
 #
 # Get the signature chain of a user
-# and pretty-prints it as (almost valid) JSON
+# and pretty-print it as (almost valid) JSON
+#
+# Usage: sigs.py <username> > sigs.json
 #
 ###
 
