@@ -12,7 +12,7 @@ import json
 import sys
 
 from keybase import get_uid, get_sigchain
-from utils import load_json_fields
+from utils import load_json_fields, parse_times
 
 
 if __name__ == '__main__':
@@ -26,4 +26,5 @@ if __name__ == '__main__':
     for i, sig in enumerate(sigs, start=1):
         sig['_'] = i  # Just add the number on the top
         load_json_fields(sig)
+        parse_times(sig)
         print(json.dumps(sig, sort_keys=True, indent=4, separators=(',', ': ')))
